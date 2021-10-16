@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<script>
+//Defined function
+// var a=0;
+// var b=0;
+// var c=0;
+// function add(a,b){
+//        c= a+b;
+//        document.write(c);
+// }
+//  add(4,5);
+
+ // Undefined function
+
+//  function add(){
+
+//  }
+//  console.log(add());
+
+ //Anonymious function (no name of function)
+// var prints= function add(){
+//         console.log("Anonymious function");
+// }
+// prints();
+// setTimeout(prints,5000);
+ //call back function
+function requst(order){
+                document.write("customer order",order+"<br>");
+                response(function(){
+                        document.write("delivered data",order+"<br>");     
+                });
+}
+function response(abc){
+        setTimeout(abc,5000);
+}
+requst(1);
+requst(2);
+requst(3);
+requst(4);
+requst(5);
+ </script>
+ </body>
+ <html>

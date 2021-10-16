@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Rectangle
+</title>
+</head>
+<body><p>Rectangle</p>
+<script>
+    var txt="*";
+   var count=0;
+   var color="red";
+   for(var i=1; i<=8;){
+                    for(var j=1; j<=8;){
+                            if(count==1 && color=="green"){
+                             count=0; 
+                                color="red";
+                            }
+                             if(count==1 && color=="red"){
+                                    count=0; 
+                                    color="green";
+                             }
+                         document.write(txt.fontcolor(color)+"&nbsp");
+                        j=j+1;
+                    }
+     count++;
+     document.write("<br>");
+     i=i+1;
+   }      
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Triangle
+</title>
+</head>
+<body><p>Triangle</p>
+<script>
+var txt="*";
+var counter=0;
+for(var i=1;i<=20;)
+{
+	for(var k=0;k<=i-2;k++){
+		document.write("&nbsp");
+		//document.write(txt.fontcolor("green")+"&nbsp");
+	}
+		for(var j=20;j>=i;j--){
+		if(j-1<i)
+
+			 document.write(txt.fontcolor("green")+"&nbsp"); 
+			else if(i==1)
+			 document.write(txt.fontcolor("green")+"&nbsp"); 
+			 else if(j==20)
+			 document.write(txt.fontcolor("green")+"&nbsp");
+			// // else if(i==)
+			// document.write(txt.fontcolor("green")+"&nbsp"); 
+		else
+			document.write(txt.fontcolor("red")+"&nbsp");
+		//if(i<2)
+		//	document.write(txt.fontcolor("red")+"&nbsp");
+		//else if(i<4)
+		//	document.write(txt.fontcolor("green")+"&nbsp");
+		//else if(i<6)
+		//	document.write(txt.fontcolor("red")+"&nbsp");	
+		//else if(i<8)
+		//	document.write(txt.fontcolor("green")+"&nbsp");
+		//else
+		//	document.write(txt.fontcolor("red")+"&nbsp");
+		//document.write("<h1 style=\"color:red\">*</h1>"+"&nbsp");	
+		//document.write("<span class='green'>*</span>"+"&nbsp");
+		//document.write(txt.fontcolor("red")+"&nbsp");
+		//document.write(txt.fontcolor("green")+"&nbsp");	
+		}
+i=i+2;
+counter++;
+		document.write("<br>");
+}
+</script>
+</body>
+</html>

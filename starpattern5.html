@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Triangle
+</title>
+</head>
+<body><p>Triangle</p>
+<script>
+    var color="green";
+    var count=0;
+var txt="*";
+var counter=0;
+for(var i=1;i<=20;)
+{
+	for(var k=0;k<=i-2;k++){
+		document.write("&nbsp");
+	}
+		for(var j=20;j>=i;j--){
+            if(count==1 && color=="green"){
+                count=0; 
+                color="red";
+            }
+            if(count==1 && color=="red"){
+                count=0; 
+                color="green";
+            }
+            
+			document.write(txt.fontcolor(color)+"&nbsp");
+           // count++;
+		}
+         count++;
+                i=i+2;
+                counter++;
+                document.write("<br>");
+                
+}
+for(var i=1;i<=20;)
+{
+	for(var k=20;k>=i+2;k--){
+		document.write("&nbsp");
+	}
+		for(var j=0;j<=i;j++){
+            if(count==1 && color=="green"){
+                count=0; 
+                color="red";
+            }
+            if(count==1 && color=="red"){
+                count=0; 
+                color="green";
+            }
+            
+			document.write(txt.fontcolor(color)+"&nbsp");
+           // count++;
+		}
+         count++;
+                i=i+2;
+                counter++;
+                document.write("<br>");
+                
+}
+</script>
+</body>
+</html>
